@@ -1,0 +1,12 @@
+name = "df-sync"
+main = "worker.js"
+compatibility_date = "2024-11-01"
+
+# KV namespace binding. Replace the id below with the one printed by:
+#   wrangler kv namespace create DF_KV
+[[kv_namespaces]]
+binding = "DF_KV"
+id = "PASTE_YOUR_KV_NAMESPACE_ID_HERE"
+
+# The shared secret is NOT stored here. Set it once with:
+#   wrangler secret put SYNC_SECRET
